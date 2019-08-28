@@ -308,98 +308,84 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $(document).ready(function(){   
   $("#Question4a").click(function()
   { 
-      $('#Question51a').attr("enabled", "true");
-      $('#Question51b').attr("enabled", "true");
-      $('#Question52a').attr("disabled", "true");
-      $('#Question52b').attr("disabled", "true");
-      $('#Question53a').attr("disabled", "true");
-      $('#Question53b').attr("disabled", "true");
-      $('#Question54a').attr("disabled", "true");
-      $('#Question54b').attr("disabled", "true");
-      $('#Question61a').attr("enabled", "true");
-      $('#Question61b').attr("enabled", "true");
-      $('#Question62a').attr("disabled", "true");
-      $('#Question62b').attr("disabled", "true");
-      $('#Question63a').attr("disabled", "true");
-      $('#Question63b').attr("disabled", "true");
-      $('#Question64a').attr("disabled", "true");
-      $('#Question64b').attr("disabled", "true");
+    $('#Question52a,#Question52b,#Question53a,#Question53b,#Question54a,#Question54b,#Question62a,#Question62b,#Question63a,#Question63b,#Question64a,#Question64b').attr("disabled",true);
+    $('#Question52a,#Question52b,#Question53a,#Question53b,#Question54a,#Question54b,#Question62a,#Question62b,#Question63a,#Question63b,#Question64a,#Question64b').val('');
+    $('#Question51a,#Question51b,#Question61a,#Question61b').attr("disabled",false);
+    var questionFiveOne = $("input[name='Question51']").val();
+    var questionFiveTwo = $("input[name='Question52']").val('none');
+    var questionFiveThree = $("input[name='Question53']").val('none');
+    var questionFiveFour = $("input[name='Question54']").val('none');
+    var questionSixOne = $("input[name='Question61']").val();
+    var questionSixTwo = $("input[name='Question62']").val('none');
+    var questionSixThree = $("input[name='Question63']").val('none');
+    var questionSixFour = $("input[name='Question64']").val('none');
+     
   });
   $("#Question4b").click(function()
   { 
-      $('#Question51a').attr("disabled", "true");
-      $('#Question51b').attr("disabled", "true");
-      $('#Question52a').attr("enabled", "true");
-      $('#Question52b').attr("enabled", "true");
-      $('#Question53a').attr("disabled", "true");
-      $('#Question53b').attr("disabled", "true");
-      $('#Question54a').attr("disabled", "true");
-      $('#Question54b').attr("disabled", "true");
-      $('#Question61a').attr("disabled", "true");
-      $('#Question61b').attr("disabled", "true");
-      $('#Question62a').attr("enabled", "true");
-      $('#Question62b').attr("enabled", "true");
-      $('#Question63a').attr("disabled", "true");
-      $('#Question63b').attr("disabled", "true");
-      $('#Question64a').attr("disabled", "true");
-      $('#Question64b').attr("disabled", "true");
+    $('#Question51a,#Question51b,#Question53a,#Question53b,#Question54a,#Question54b,#Question61a,#Question61b,#Question63a,#Question63b,#Question64a,#Question64b').attr("disabled",true);
+    $('#Question51a,#Question51b,#Question53a,#Question53b,#Question54a,#Question54b,#Question61a,#Question61b,#Question63a,#Question63b,#Question64a,#Question64b').prop("value",'');
+    $('#Question52a,#Question52b,#Question62a,#Question62b').attr("disabled",false);
+    var questionFiveOne = $("input[name='Question51']").val('none');
+    var questionFiveTwo = $("input[name='Question52']").val();
+    var questionFiveThree = $("input[name='Question53']").val('none');
+    var questionFiveFour = $("input[name='Question54']").val('none');
+    var questionSixOne = $("input[name='Question61']").val('none');
+    var questionSixTwo = $("input[name='Question62']").val();
+    var questionSixThree = $("input[name='Question63']").val('none');
+    var questionSixFour = $("input[name='Question64']").val('none');
   });
   $("#Question4c").click(function()
   { 
-      $('#Question51a').attr("disabled", "true");
-      $('#Question51b').attr("disabled", "true");
-      $('#Question52a').attr("disabled", "true");
-      $('#Question52b').attr("disabled", "true");
-      $('#Question53a').attr("enabled", "true");
-      $('#Question53b').attr("enabled", "true");
-      $('#Question54a').attr("disabled", "true");
-      $('#Question54b').attr("disabled", "true");
-      $('#Question61a').attr("disabled", "true");
-      $('#Question61b').attr("disabled", "true");
-      $('#Question62a').attr("disabled", "true");
-      $('#Question62b').attr("disabled", "true");
-      $('#Question63a').attr("enabled", "true");
-      $('#Question63b').attr("enabled", "true");
-      $('#Question64a').attr("disabled", "true");
-      $('#Question64b').attr("disabled", "true");
+    $('#Question51a,#Question51b,#Question52a,#Question52b,#Question54a,#Question54b,#Question61a,#Question61b,#Question62a,#Question62b,#Question64a,#Question64b').attr("disabled",true);
+    $('#Question51a,#Question51b,#Question52a,#Question52b,#Question54a,#Question54b,#Question61a,#Question61b,#Question62a,#Question62b,#Question64a,#Question64b').prop("value",'');
+    $('#Question53a,#Question53b,#Question63a,#Question63b').attr("disabled",false);
+    var questionFiveTwo = $("input[name='Question52']").val('none');
+    var questionFiveThree = $("input[name='Question53']").val();
+    var questionFiveOne = $("input[name='Question51']").val('none');
+    var questionFiveFour = $("input[name='Question54']").val('none');
+    var questionSixTwo = $("input[name='Question62']").val('none');
+    var questionSixThree = $("input[name='Question63']").val();
+    var questionSixOne = $("input[name='Question61']").val('none');
+    var questionSixFour = $("input[name='Question64']").val('none');
   });
   $("#Question4d").click(function()
   { 
-      $('#Question51a').attr("disabled", "true");
-      $('#Question51b').attr("disabled", "true");
-      $('#Question52a').attr("disabled", "true");
-      $('#Question52b').attr("disabled", "true");
-      $('#Question53a').attr("disabled", "true");
-      $('#Question53b').attr("disabled", "true");
-      $('#Question54a').attr("enabled", "true");
-      $('#Question54b').attr("enabled", "true");
-      $('#Question61a').attr("disabled", "true");
-      $('#Question61b').attr("disabled", "true");
-      $('#Question62a').attr("disabled", "true");
-      $('#Question62b').attr("disabled", "true");
-      $('#Question63a').attr("disabled", "true");
-      $('#Question63b').attr("disabled", "true");
-      $('#Question64a').attr("enabled", "true");
-      $('#Question64b').attr("enabled", "true");
+    $('#Question51a,#Question51b,#Question52a,#Question52b,#Question53a,#Question53b,#Question61a,#Question61b,#Question62a,#Question62b,#Question63a,#Question63b').attr("disabled",true);
+    $('#Question51a,#Question51b,#Question52a,#Question52b,#Question53a,#Question53b,#Question61a,#Question61b,#Question62a,#Question62b,#Question63a,#Question64b').prop("value",'');
+    $('#Question54a,#Question54b,#Question64a,#Question64b').attr("disabled",false);
+    var questionFiveTwo = $("input[name='Question52']").val('none');
+    var questionFiveThree = $("input[name='Question53']").val('none');
+    var questionFiveFour = $("input[name='Question54']").val();
+    var questionFiveOne = $("input[name='Question51']").val('none');
+    var questionSixTwo = $("input[name='Question62']").val('none');
+    var questionSixThree = $("input[name='Question63']").val('none');
+    var questionSixFour = $("input[name='Question64']").val();
+    var questionSixOne = $("input[name='Question61']").val('none');
   });
-
-  $('#my_form').change(function (){
-    selected_value = $("input[name='Question1']:checked").val();
-    alert(selected_value);
-  })
-
   $("#submit").click(function()
   {      
     var title = $("input[name='title']").val(); 
     $.ajax({
-        type: "POST",
         url: base_url + "questions/process_form", 
-        data: {textbox: $("#textbox").val()},
-        dataType: "text",  
+        method: "POST",
+        data: {
+          "questionOne": questionOne,"questionTwo": questionTwo,"questionThree": questionThree,
+          "questionFour": questionFour, 
+          "questionFiveOne": questionFiveOne,"questionFiveTwo": questionFiveTwo,"questionFiveThree": questionFiveThree,
+          "questionFiveFour": questionFiveFour,
+          "questionSixOne": questionSixOne,"questionSixTwo": questionSixTwo,"questionSixThree": questionSixThree,
+          "questionSixFour": questionSixFour,
+          "questionSeven": questionSeven, "questionEight": questionEight, "questionNine": questionNine,
+          "questionTen": questionTen
+          },
+        // data: $('#my_form').serialize(),
+        dataType: "json",  
         cache:false,
         success: 
-              function(data){
-                alert(data);  //as a debugging message.
+              function(response){
+                console.log(response);
+                console.log(response.success);
               }
           });// you have missed this bracket
     return false;
